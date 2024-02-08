@@ -18,7 +18,7 @@ export default function Introduction() {
     }, 2000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [listOfWords.length]);
 
   return (
     <motion.div
