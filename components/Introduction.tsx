@@ -28,7 +28,7 @@ export default function Introduction() {
         duration: 0.8,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className="flex flex-col gap-5 md:gap-8 lg:gap-10"
+      className="flex flex-col gap-5 md:gap-8 lg:gap-[60px]"
     >
       {/* Image and main text */}
       <div className="flex items-center md:gap-[50px] gap-6">
@@ -43,7 +43,7 @@ export default function Introduction() {
           <h1 className="lg:text-6xl md:text-6xl text-3xl font-bold">
             Hello There!
             <br /> my name's{" "}
-            <span className="w-fit font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-blue-500 to-orange-500">
+            <span className="w-fit font-bold bg-clip-text text-transparent bg-gradient-to-r  from-pink-500 to-blue-500">
               Mayank
             </span>
           </h1>

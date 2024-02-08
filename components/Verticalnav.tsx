@@ -3,6 +3,7 @@ import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import DevicesOutlinedIcon from "@mui/icons-material/DevicesOutlined";
+import Link from "next/link";
 export default function Vertical() {
   return (
     <div className="h-screen border-r w-[230px] fixed">
@@ -12,20 +13,26 @@ export default function Vertical() {
       </div>
 
       {/* Routes */}
-      <div className="p-5 gap-5 flex items-center h-[80px] border-b text-gray-400 hover:text-white">
+      <Link
+        href="/"
+        className="p-5 gap-5 flex items-center h-[80px] border-b text-gray-400 hover:text-white"
+      >
         <HomeOutlinedIcon />
         <h1>Home</h1>
-      </div>
+      </Link>
 
       <div className="p-5 gap-5 flex items-center h-[80px] border-b text-gray-400 hover:text-white">
         <WorkOutlineOutlinedIcon />
         <h1>Projects</h1>
       </div>
 
-      <div className="p-5 gap-5 flex items-center h-[80px] border-b text-gray-400 hover:text-white">
+      <Link
+        href="/AboutMe"
+        className="p-5 gap-5 flex items-center h-[80px] border-b text-gray-400 hover:text-white"
+      >
         <PermIdentityOutlinedIcon />
         <h1>About me</h1>
-      </div>
+      </Link>
 
       <div className="p-5 gap-5 flex items-center h-[80px] border-b text-gray-400 hover:text-white">
         <DevicesOutlinedIcon />
